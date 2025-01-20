@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- imports -->
+     <link rel="stylesheet" href="styles/reset.css">
+     <link rel="stylesheet" href="styles/style.css">
+    <title>AluraGeek</title>
+</head>
+
+
+<body>
+    <!-- seccion header -->
+    <header class="header">
+        <img src="./assets/Logo.svg" alt="logo alurageek" />
+    </header>
+
+    <!-- contenedor 1-->
+    <main class="main-container">
+        <section>
+            <h1>Mis Productos:</h1>
+            <div data-product class="products-container"></div>
+        </section>
+
+        <!-- para añadir productos -->
+        <section>
+            <h1>Agrega tu Producto:</h1>
+
+            <!-- Formulario -->
+            <form class="form-container" data-form>
+                <input data-name placeholder="Nombre..." type="text">
+                <input data-price placeholder="Precio..." type="text">
+                <input data-image placeholder="Url de la imagen..." type="text">
+                <span data-mensage class="mensajeError"></span>
+                <div class="button-container">
+                    <button type="submit" class="button-submit" id="button"> Enviar...</button>
+                    <button type="reset" class="button-clear" id="button">Limpiar...</button>
+                </div>
+            </form>
+            
+        </section>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footer-container">
+        <div>
+            <img src="./assets/Logo.svg" />
+        </div>
+        <p> Desarollado por Julio Ruiz, Challenge Alura Latam</p>
+        
+    </footer>
+
+
+    <!-- Script -->
+	<script type="module" src="js/controller/main.js"></script>
+    
+</body>
+</html>
